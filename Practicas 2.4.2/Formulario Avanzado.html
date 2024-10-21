@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRACTICA FORMULARIO</title>
+    </head>
+    <body>
+        <form action="mailto:javier.diez18@educa.madrid.org">
+            <fieldset>
+                <legend>Personaje</legend>
+                <label for="superheroe elección">superheroe favorito</label>
+                <input list="superheroes" name="superheroe">
+                <datalist id="superheroes">
+                <option value="">Elige Tu Superheroe Favorito</option>
+                <option value="spiderman">spiderman</option>
+                <option value="capitan america">capitan america</option>
+                <option value="hulk">hulk</option>
+                <option value="ojo de halcon">ojo de halcon</option>
+                <option value="viuda negra">viuda negra</option>
+                <option value="iron man">iron man</option>
+            </datalist>
+            <br>
+            <br>
+            <label for="color">Color</label>
+            <br>
+            <input type="color" name="color">
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="name">Nombre</label>
+                <br>
+                <input text="nombre" name="nombres">
+                <datalist id="nombres"></datalist>
+                <br>
+                <br>
+                <label for="telefono">Telefono</label>
+                <br>
+                <input type="tel" name="telefono">
+                <datalist id="telefono"></datalist>
+                <br>
+                <br>
+                <label for="fecha">Fecha</label>
+                <br>
+                <input type="date">
+                <br>
+                <br>
+                <label for="contraseña">Contraseña</label>
+                <br>
+                <input type="text">
+            </fieldset>
+            <br>
+            <button name="Enviar" type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
