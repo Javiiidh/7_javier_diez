@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>PRACTICA FORMULARIO</title>
-    </head>
-    <body>
-        <form action="mailto:javier.diez18@educa.madrid.org">
-            <fieldset>
-                <legend>Personaje</legend>
-                <label for="superheroe elección">superheroe favorito</label>
-                <input list="superheroes" name="superheroe">
-                <datalist id="superheroes">
+
+<head>
+    <title>PRACTICA FORMULARIO</title>
+</head>
+
+<body>
+    <form action="mailto:javier.diez18@educa.madrid.org">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label for="superheroe elección">superheroe favorito</label>
+            <input list="superheroes" name="superheroe">
+            <datalist id="superheroes">
                 <option value="">Elige Tu Superheroe Favorito</option>
                 <option value="spiderman">spiderman</option>
                 <option value="capitan america">capitan america</option>
@@ -23,63 +25,118 @@
             <label for="color">Color</label>
             <br>
             <input type="color" name="color">
-            </fieldset>
+        </fieldset>
 
-            <fieldset>
-                <legend>Datos de contacto</legend>
-                <label for="name">Nombre</label>
-                <br>
-                <input text="nombre" name="nombres">
-                <datalist id="nombres"></datalist>
-                <br>
-                <br>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="name">Nombre</label>
+            <br>
+            <input text="nombre" name="nombres">
+            <datalist id="nombres"></datalist>
+            <br>
+            <br>
+            <label for="telefono">Telefono</label>
+            <br>
+            <input type="tel" name="telefono">
+            <datalist id="telefono"></datalist>
+            <br>
+            <br>
+            <label for="fecha">Fecha</label>
+            <br>
+            <input type="date">
+            <br>
+            <br>
+            <label for="contraseña">Contraseña</label>
+            <br>
+            <input type="password">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Selecciona la forma de contactarte preferida</legend>
+            <br>
+            <div>
+                <input type="radio" name="drone" id="email" value="email">
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input type="radio" name="drone" id="telefono" value="telefono">
                 <label for="telefono">Telefono</label>
-                <br>
-                <input type="tel" name="telefono">
-                <datalist id="telefono"></datalist>
-                <br>
-                <br>
-                <label for="fecha">Fecha</label>
-                <br>
-                <input type="date">
-                <br>
-                <br>
-                <label for="contraseña">Contraseña</label>
-                <br>
-                <input type="password">
-                <br>
-            </fieldset>
-            <fieldset>
-                <legend>Selecciona la forma de contactarte preferida</legend>
-                <br>
-                <div>
-                    <input type="radio" name="drone" id="email" value="email">
-                    <label for="email">Email</label>
-                </div>
-                <div>
-                    <input type="radio" name="drone" id="telefono" value="telefono">
-                    <label for="telefono">Telefono</label>
-                </div>
-                <div>
-                    <input type="radio" name="drone" id="carta" value="carta">
-                    <label for="carta">Carta</label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Asignatura favorita</legend>
-                <div>
-                    <input type="checkbox" id="apweb" name="apweb">
-                    <label for="apweb">Ap.web</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="seginf" id="seginf">
-                    <label for="seginf">Seg.Inf</label>
-                </div>
-            </fieldset>
+            </div>
+            <div>
+                <input type="radio" name="drone" id="carta" value="carta">
+                <label for="carta">Carta</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Asignatura favorita</legend>
+            <div>
+                <input type="checkbox" id="apweb" name="apweb">
+                <label for="apweb">Ap.web</label>
+            </div>
+            <div>
+                <input type="checkbox" name="seginf" id="seginf">
+                <label for="seginf">Seg.Inf</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Inserta Archivo</legend>
+            <label for="avatar">Elige el Archivo Necesario</label>
+
             <br>
             <br>
-            <button name="Enviar" type="submit">Enviar</button>
-            <input type="reset" value="reset">
-        </form>
-    </body>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+            <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Volumen</legend>
+            <p>Ajustes de Audio</p>
+
+            <div>
+                <input type="range" id="volume" name="volume" min="0" max="11" />
+                <label for="volume">Audio Mono</label>
+            </div>
+
+            <div>
+                <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
+                <label for="cowbell">Audio estereo</label>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Hora</legend>
+            <label for="appt">Elige la Hora de Salida</label>
+
+            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+
+            <small>Horas y Minutos</small>
+
+        </fieldset>
+        <fieldset>
+            <Legend>URL</Legend>
+            <form>
+                <label for="url">Inserta el URL:</label>
+                <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+                    required />
+            </form>
+
+        </fieldset>
+        <fieldset>
+            <legend>Inicio de Sesión</legend>
+            <p>Inicia Sesión</p>
+
+            <div>
+                <label for="userId">Usuario</label>
+                <input type="text" id="userId" name="userId" />
+            </div>
+
+            <input type="image" id="image" alt="Login" src="favicon-16x16.png" style="width: 50px;" />
+        </fieldset>
+        <br>
+        <br>
+        <button name="Enviar" type="submit">Enviar</button>
+        <input type="reset" value="reset">
+    </form>
+</body>
+
 </html>
