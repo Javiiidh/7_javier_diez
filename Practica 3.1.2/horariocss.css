@@ -1,0 +1,14 @@
+caption{
+    border-radius: 25px;
+    background-color: purple;
+    color: white;
+}
+td, th{
+    border:3px outset;
+    border-radius: 5px;
+}
+th{
+    padding: 7px;
+    border-radius: 5px;
+    background-color: darkcyan;
+}
