@@ -1,14 +1,22 @@
 caption{
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: purple;
     color: white;
 }
 td, th{
     border:3px outset;
     border-radius: 5px;
+    text-align: center;
 }
 th{
     padding: 7px;
     border-radius: 5px;
     background-color: darkcyan;
+}
+td:nth-child(1){
+    background-color: darkblue;
+}
+th:nth-child(1){
+    border: 0px;
+    background-color: white;
 }
