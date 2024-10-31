@@ -3,20 +3,72 @@ caption{
     background-color: purple;
     color: white;
 }
+
 td, th{
     border:3px outset;
     border-radius: 5px;
     text-align: center;
-}
-th{
     padding: 7px;
-    border-radius: 5px;
+}
+
+th{
     background-color: darkcyan;
 }
+
 td:nth-child(1){
-    background-color: darkblue;
+    background-color: rgb(75, 75, 201);
+    color: white;
 }
+td:nth-child(1):hover{
+    background-color: rgb(86, 86, 151);
+    color: rgb(216, 198, 198);
+}
+th:nth-child(n+2):hover{
+    background-color: blue;
+}
+
 th:nth-child(1){
     border: 0px;
     background-color: white;
+}
+
+.ingles{
+    background-color: rgb(101, 202, 101);
+}
+
+.recreo{
+    background-color: yellow;
+}
+
+.recreo:hover{
+    background-color: orange;
+    border-color: purple;
+}
+
+.seginf{
+    background-color: orange;
+}
+
+.empresa{
+    background-color: rgb(62, 212, 223);
+}
+
+.sor{
+    background-color: rgb(219, 91, 91);
+}
+
+.apweb{
+    background-color: rgb(188, 108, 224);
+}
+
+.servred{
+    background-color: rgb(218, 245, 96);
+}
+
+.hueco{
+    border: 0px;
+}
+
+.tutoria{
+    background-color: rgb(243, 104, 201);
 }
