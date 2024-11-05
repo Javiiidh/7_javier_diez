@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+display: grid;
+grid-template-rows: 20% 65% 15%;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-areas:
+ "header header header header"
+ "main main . aside"
+ "footer footer footer footer";
+height: 100vh;
+}
+ header{
+    grid-area: header;
+    background-color: palegoldenrod;
+ }
+
+ main{
+    grid-area: main;
+    background-color: darkolivegreen;
+ }
+
+ aside{
+    grid-area: aside;
+    background-color: powderblue;
+ }
+
+ footer{
+    grid-area: footer;
+    background-color: brown;
+ }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <header>
+        <h1>HEADER</h1>
+        </header>
+        <main>
+        <h1>MAIN</h1>
+        </main>
+        <aside>
+        <h1>ASIDE</h1>
+        </aside>
+        <footer>
+        <h1>FOOTER</h1>
+        </footer>
+        </div>
+       </body>
+</html>
