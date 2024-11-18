@@ -1,0 +1,89 @@
+body {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+header img {
+    border-radius: 100px;
+}
+
+header h1 {
+    text-shadow: 2px 3px 1 grey;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 5%;
+    background: darkgoldenrod;
+    background:  radial-gradient(circle, darkgoldenrod), blanchedalmond;
+    font-size: 20px;
+}
+
+nav {
+    justify-content: space-between;
+    background-color: goldenrod;
+    display: flex;
+    grid-area: auto
+}
+
+section {
+    padding-left: 15px;
+}
+
+section:not(:last-child) {
+    border-bottom: 1px yellow;
+}
+
+.knowledge {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer {
+    background-color: #daa520;
+    text-align: end;
+    padding: 20px 15px;
+}
+
+#Habilidades ul>li::before {
+    content: "→";
+    padding-right: 0.5em;
+    color: yellowgreen;
+}
+
+#Habilidades ul {
+    list-style: none;
+}
+
+h3 {
+    color: goldenrod;
+}
+
+h4 {
+    color: gold;
+}
+
+.caja {
+    background-color: blanchedalmond;
+    margin: 5px;
+    padding: 5px;
+    border: 1px;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    text-align: center;
+    border: 1px;
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.caja:hover {
+    background-color: orange;
+}
