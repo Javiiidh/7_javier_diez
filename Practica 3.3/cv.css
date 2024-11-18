@@ -87,3 +87,7 @@ h4 {
 .caja:hover {
     background-color: orange;
 }
+
+.languages ul > li::before {
+    visibility: hidden;
+}
