@@ -9,3 +9,8 @@ document.getElementById("boton1").onclick = () => {
     console.log("Click sobre el boton 1...");
     mostrarFecha();
 }
+
+var micaja
+document.getElementById("micaja").onmouseover = () => {
+    document.getElementById("micaja").style.backgroundColor = "green";
+}
