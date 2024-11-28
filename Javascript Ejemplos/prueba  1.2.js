@@ -1,4 +1,4 @@
-function mostrarFecha(){
+function mostrarFecha() {
     var now = Date();
     console.log("Ahora son: " + now);
     alert("Ahora son las: " + now);
@@ -26,13 +26,32 @@ micaja.onmouseleave = () => {
 
 document.getElementById("micaja").style.fontSize = "10px";
 
-function changefontsize () {
+function changefontsize() {
     var micaja = document.getElementById("micaja");
     var fontSizemicaja = micaja.style.fontSize;
     console.log("mi caja font size" + fontSizemicaja);
+
+    //si el tamaño de letra actual es de 10px, lo pongo a 12px
+    if (fontSizemicaja == "10px") 
+    {
+    micaja.style.fontSize = "12px";
+    }
+
+    //si l tamaño de letra es actual es de 12px, lo pongo en 14px
+    else if (fontSizemicaja == "12px")
+    {
+        micaja.style.fontSize = "14px";
+    }
+
+    //si el tamaño de letra actual no cumple ninguna de las condiciones e arriba,
+    //lo pongo a 10px
+     else 
+    {
+        micaja.style.fontSize = "10px";
+    }
 }
 
-var changefontsize = document.getElementById("changefontsize");
-changefontsize.onclick = () => {
+var cambiartamaño = document.getElementById("cambiartamaño");
+cambiartamaño.onclick = () => {
     changefontsize();
 }
