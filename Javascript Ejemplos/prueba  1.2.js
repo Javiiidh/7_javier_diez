@@ -10,7 +10,8 @@ document.getElementById("boton1").onclick = () => {
     mostrarFecha();
 }
 
-var micaja
-document.getElementById("micaja").onmouseover = () => {
-    document.getElementById("micaja").style.backgroundColor = "green";
+var micaja = document.getElementById("micaja");
+micaja.onmouseover = () => {
+    micaja.style.backgroundColor = "green";
+    micaja.style.fontSize = "40px";
 }
