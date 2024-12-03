@@ -1,25 +1,21 @@
-function changefontsize() {
-    var micaja = document.getElementById("micaja");
-    var fontSizemicaja = micaja.style.fontSize;
-    console.log("mi caja font size" + fontSizemicaja);
-
-    if (fontSizemicaja == "10px") 
-    {
-    micaja.style.fontSize = "12px";
+function cambiarcolor () {
+    var div = document.getElementById('cambiardivcolor');
+    var divcolor = div.style.backgroundColor;
+    if (divcolor == "red") {
+        div.style.backgroundColor = "orange";
     }
-
-    else if (fontSizemicaja == "12px")
-    {
-        micaja.style.fontSize = "14px";
+    else if (divcolor == "orange") {
+        div.style.backgroundColor = "green";
     }
-
-     else 
-    {
-        micaja.style.fontSize = "10px";
+    else {
+        div.style.backgroundColor = "red";
     }
 }
 
-var cambiartamaño = document.getElementById("cambiartamaño");
-cambiartamaño.onclick = () => {
-    changefontsize();
+cambiardivcolor.onmouseleave = () => {
+    cambiardivcolor.InnerHTML += "Adios";
+}
+
+cambiardivcolor.onmousecenter = () => {
+    cambiardivcolor.InnerHTML += "Hola";
 }
