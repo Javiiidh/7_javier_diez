@@ -16,6 +16,6 @@ cambiardivcolor.onmouseleave = () => {
     cambiardivcolor.InnerHTML += "Adios";
 }
 
-cambiardivcolor.onmousecenter = () => {
+cambiardivcolor.onmouseenter = () => {
     cambiardivcolor.InnerHTML += "Hola";
 }
