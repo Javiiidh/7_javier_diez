@@ -1,6 +1,8 @@
-function cambiarcolor () {
+function cambiarcolor() {
     var div = document.getElementById('cambiardivcolor');
+
     var divcolor = div.style.backgroundColor;
+
     if (divcolor == "red") {
         div.style.backgroundColor = "orange";
     }
@@ -12,10 +14,12 @@ function cambiarcolor () {
     }
 }
 
+
+var cambiardivcolor = document.getElementById("cambiardivcolor");
 cambiardivcolor.onmouseleave = () => {
-    cambiardivcolor.InnerHTML += "Adios";
+    cambiardivcolor.innerHTML += "Adios";
 }
 
 cambiardivcolor.onmouseenter = () => {
-    cambiardivcolor.InnerHTML += "Hola";
+    cambiardivcolor.innerHTML += "Hola";
 }

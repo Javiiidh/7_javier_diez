@@ -3,7 +3,7 @@ function calcularNotaFinal() {
     console.log("Nota primer input: " + notaPrimeraEv);
 
     var notaSegundaEv = document.getElementById("nota_segunda_ev").value;
-    console.log("Nota sgundo input: " + notaSegundaEv);
+    console.log("Nota segundo input: " + notaSegundaEv);
 
     var nombre = document.getElementById("nombre").value;
 
